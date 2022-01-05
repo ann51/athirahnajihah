@@ -1,0 +1,359 @@
+*{
+    margin: auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.bg{
+    background-image: url(images/Untitled\ design.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Header*/
+header{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color:rgb(24, 68, 68);
+}
+
+nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a, .dropbtn{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(216, 174, 157);
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(216, 174, 157);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: silver;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Main Content Homepage*/
+.row{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5%;
+}
+
+.right-col {
+    flex-basis: 40%;
+}
+
+.left-col{
+    flex-basis: 50%;
+}
+
+.right-col img{
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.right-col img:hover{
+    transform: translateY(-8px);
+}
+
+.left-col h1{
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.left-col h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.left-col p{
+    font-size: 25px;
+    margin: 20px 0 70px;
+}
+
+span{
+    font-size: 55px;
+    color:rgb(219, 154, 129);
+    text-shadow: rgb(218, 71, 71);
+}
+
+.col{
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.btnwatch {
+    background-color: rgba(30, 70, 70, 0.767);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.btnwatch:hover {opacity: 0.6}
+
+.btnwatch a:link{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.btnwatch a:visited{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+.row2:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(216, 174, 157, 0.884);
+  }
+
+.card a:link{
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.card a:visited{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.card a:hover{
+    color: none;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.card a:active{
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:rgb(24, 68, 68);
+}
+
+.footer h3{
+    font-size: 15px;
+    color: white;
+    margin-right: 40px;
+}
+
+.footer p{
+    color: white;
+}
+
+.footer a{
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+    color: white;
+    transition: transform .3s;
+}
+
+.footer a:hover{
+    transform: scale(2);
+    color: silver;
+}
+
+/*About Me*/
+.row-ab{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5%;
+}
+
+.right-col.ab {
+    flex-basis: 50%;
+}
+
+.left-col.ab{
+    flex-basis: 40%;
+}
+
+.right-col.ab h1{
+    font-weight: 700;
+}
+
+.right-col.ab p{
+    font-size: 25px;
+    margin: 20px 0 70px;
+}
+
+.imguitm {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgunisza {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-skill{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5%;
+}
+
+.post1 {
+    flex-basis: 60%;
+}
+
+.post2{
+    flex-basis: 40%;
+}
+
+.row2:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*extracurriculum*/
+.colextra {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+  
+.rowextra {margin: 0 -5px;}
+
+.rowextra:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.cardx {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: rgb(216, 174, 157);
+}
+
+@media screen and (max-width: 600px) {
+    .colextra {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
+.banner{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+}
+
+/*Contact*/
+.row-contact{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5%;
+}
+
+.col-cont{
+    flex-basis: 40%;
+}
+
+.col-imgcont{
+    flex-basis: 50%;
+}
+
+.col-cont h2{
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.col-cont p{
+    font-size: 25px;
+    margin: 20px 0 70px;
+}
